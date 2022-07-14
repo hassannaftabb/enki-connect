@@ -1,0 +1,404 @@
+.skills {
+  flex-direction: column;
+}
+
+.skillsCon {
+  padding: 50px 0 70px;
+}
+
+/*Carousel*/
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ingameCarouselContainer {
+  width: 100%;
+}
+
+.carousel__wrap {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel__inner {
+  height: 20rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/*width: 1900px;*/
+.carousel__container {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 1550px;
+  user-select: none;
+}
+
+.carousel__slide-list {
+  height: 100%;
+  left: 50%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 13950px;
+}
+/*width:(slide_count+0.5)*(Slide_width)*2*/
+/*slide_width 500*/
+.carousel__slide-item {
+  display: inline-block;
+  margin: 0;
+  padding: 1rem;
+  position: absolute;
+  top: 0px;
+  transition: all 0.3s;
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+}
+
+.carousel__slide-item img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-background);
+  border-radius: 12px;
+  width: 400px;
+  height: 350px;
+}
+
+.carousel__btn {
+  align-items: center;
+  background: 0;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0%;
+  transform: translateY(-50%);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.carousel__btn--prev {
+  right: 95%;
+  z-index: 999;
+  display: none;
+}
+
+.carousel__btn--next {
+  left: 95%;
+  z-index: 999;
+  display: none;
+
+}
+.carousel__btn-arrow--left:hover {
+  transform: scale(1.2) rotate(-180deg);
+}
+.carousel__btn-arrow--right:hover {
+  transform: scale(1.2);
+}
+
+.carousel__btn-arrow--left,
+.carousel__btn-arrow--right {
+  opacity: 0.7;
+}
+
+.carousel__btn-arrow--left {
+  transform: rotate(-180deg);
+}
+
+.headerRight {
+  margin-bottom: 20px;
+}
+
+.carouselImageContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.carouselImageText {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.skillPressed {
+  background-color: #272f34;
+  width: 100%;
+  height: 88%;
+  border-radius: 12px;
+}
+
+.skillTitleNO {
+  margin-bottom: -10px;
+  justify-content: space-between;
+}
+
+.skillArrow {
+  transform: rotate(180deg);
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.skillTextSub {
+  margin-top: 10px;
+}
+
+.skillTextLearn {
+  margin-top: 10px;
+}
+
+.skillTextOpen {
+  font-size: 20px;
+}
+
+.skillItem {
+  height: 310px;
+}
+
+@media only screen and (max-width: 1550px) {
+  .carousel__btn--prev {
+    right: 95vw;
+  }
+
+  .carousel__btn--next {
+    left: 95vw;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .headerRight {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .headerLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+  }
+  .headerLeftTitle,
+  .headerLeftTitleText,
+  .headerLeftText {
+    text-align: center;
+    width: 100%;
+  }
+  .carousel__btn--prev {
+    opacity: 0.5;
+  }
+
+  .carousel__btn--next {
+    opacity: 0.5;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .carousel__btn--prev {
+    right: 105vw;
+  }
+
+  .carousel__btn--next {
+    left: 105vw;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .headerLeftTitle {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .headerLeftTitleText {
+    font-size: 32px;
+  }
+
+  .headerLeftText {
+    font-size: 18px;
+  }
+
+  .carousel__btn--prev {
+    right: 115vw;
+  }
+
+  .carousel__btn--next {
+    left: 115vw;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .carousel__btn--prev {
+    right: 125vw;
+  }
+
+  .carousel__btn--next {
+    left: 125vw;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .carousel__btn--prev {
+    right: 135vw;
+  }
+
+  .carousel__btn--next {
+    left: 135vw;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .carousel__btn--prev {
+    right: 145vw;
+  }
+
+  .carousel__btn--next {
+    left: 145vw;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .skillItem {
+    width: 352px;
+  }
+  .carousel__btn--prev {
+    right: 155vw;
+  }
+
+  .carousel__btn--next {
+    left: 155vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .carousel__btn-arrow--left,
+  .carousel__btn-arrow--right {
+    width: 25px;
+  }
+  .carousel__slide-item {
+    width: 350px;
+  }
+  .carousel__slide-item img {
+    width: 280px;
+    object-fit: cover;
+  }
+  .carousel__slide-list {
+    width: 9355px;
+  }
+  .skillItem {
+    width: 250px;
+  }
+
+  .carousel__btn--prev {
+    right: 165vw;
+  }
+
+  .carousel__btn--next {
+    left: 165vw;
+  }
+
+  .skillPressed {
+    width: 280px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .carousel__btn--prev {
+    right: 180vw;
+  }
+
+  .carousel__btn--next {
+    left: 180vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .carousel__btn--prev {
+    right: 195vw;
+  }
+
+  .carousel__btn--next {
+    left: 195vw;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .carousel__btn--prev {
+    right: 210vw;
+  }
+
+  .carousel__btn--next {
+    left: 210vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .carousel__btn--prev {
+    right: 230vw;
+  }
+
+  .carousel__btn--next {
+    left: 230vw;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .carousel__btn--prev {
+    right: 240vw;
+  }
+
+  .carousel__btn--next {
+    left: 240vw;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .carousel__btn--prev {
+    right: 255vw;
+  }
+
+  .carousel__btn--next {
+    left: 255vw;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .carousel__btn--prev {
+    right: 270vw;
+  }
+
+  .carousel__btn--next {
+    left: 270vw;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .carousel__btn--prev {
+    right: 285vw;
+  }
+
+  .carousel__btn--next {
+    left: 285vw;
+  }
+}

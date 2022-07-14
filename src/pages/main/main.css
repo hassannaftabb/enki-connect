@@ -1,0 +1,163 @@
+#heroSection{
+    display: none;
+}
+
+#heroSectionL{
+        width: 100%;
+        position: absolute;
+        height: 100vh;
+        top: 52%;
+}
+
+#heroSecFunc{
+    display: flex;
+    width: 80%;
+    border: 1px;
+    z-index: 9999;
+    position: absolute;
+}
+#heroSecFunc > input{
+    padding: 14px 8px;
+    width: 400px;
+    margin-left:  7%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    color: dimgrey;
+
+}
+#heroSecFunc > button{
+    padding: 14px 35px;
+    border: 2px solid white;
+    border-radius: 6px;
+    border-top-right-radius: 0px;
+    cursor: pointer;
+    margin-left: -6px;
+    font-weight: bold;
+    background: #3d6ef9;
+    color: white;
+}
+#heroSecFunc > button:hover{
+    background: #275cec;
+}
+#heroSecFunc > button > div{
+    font-weight: bold;
+    font-size: 15px;
+}
+#heroSecFunc > input::placeholder{
+    font-weight: 100;
+    color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+@media screen and (max-width: 780px) {
+    .dontshowOnMobile{
+        display:none;
+    }
+}
+@media screen and (max-width: 780px) {
+    .showOnMobile{
+        display:flex;
+    }
+}
+@media screen and (min-width: 781px) {
+    .showOnMobile{
+        display:none;
+    }
+}
+@media screen and (min-width: 660px) and (max-width: 1121px) {
+    #heroSectionL{
+        display: none;
+    }
+    
+}
+@media screen and (min-width: 1753px){
+    #heroSectionL{
+        top: 62%;
+        left:0;
+    }
+    
+}
+@media screen and (min-width:1338px) and (max-width: 1523px){
+    #heroSectionL{
+        top: 50%;
+        left:0;
+    }
+    
+}
+@media screen and (min-width:1121px) and (max-width: 1338px){
+    #heroSectionL{
+        top: 35%;
+        left:0;
+    }
+    
+}
+
+.showOnMobile{
+    background: rgb(4, 88, 19);
+    flex-direction: column;
+    padding: 20px 30px;
+    gap: 20px;
+}
+.spanMainText{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.textMainDiv{
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+.frontPageInputEmail{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+  .frontPageInputEmail input {
+    outline: none;
+    padding: 14px;
+    font-size: 22px;
+    width: 100%;
+    border-radius:7px;
+    border:0.3px solid black
+  }
+  .frontPageJoinButton{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 45px;
+  }
+  .frontPageJoinButton button{
+  background-color:rgba(45, 206, 80, 0.868);
+    outline: none;
+    padding: 13px;
+    width: 100%;
+    font-size: 22px;
+    
+    border-radius:7px;
+    border:0.3px solid black
+  }
+
+@media only screen and (max-width: 780px) {
+    #heroSection{
+        width: 100%;
+        background-color: green;
+        height: 40vh;
+        margin-top: -28px;
+        display: flex;
+        font-size: 50px;
+        align-items: center;
+        font-weight: bolder;
+        color: white;
+        padding: 8px;
+    }
+    
+#heroSectionL{
+    display: none;
+}
+  }
+  

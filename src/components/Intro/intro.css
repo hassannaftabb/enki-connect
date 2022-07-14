@@ -1,0 +1,205 @@
+.intro {
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.introLeft {
+  flex: 70%;
+}
+
+.introRight {
+  flex: 30%;
+  height: 650px;
+  width: 200px;
+}
+
+.introRightWrapper {
+  position: relative;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 40px;
+  color: var(--color-text-main);
+  text-align: left;
+  max-width: 582px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 3px;
+}
+
+.introLeftTextMain {
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--color-text-main);
+  margin-bottom: 10px;
+}
+.introLeftText {
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--color-text-main);
+  max-width: 550px;
+  opacity: 0.5;
+  margin-bottom: 35px;
+}
+
+.introLeftButton {
+  background-color: var(--color-main);
+  width: 206px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 28px;
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--color-text-main);
+  cursor: pointer;
+}
+
+.introLeftButtonSecond {
+  background-color: var(--color-main-second);
+  width: 206px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 28px;
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--color-text-main);
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.introButtons {
+  display: flex;
+}
+
+.introLeftButton:hover,
+.introLeftButtonSecond:hover {
+  -webkit-transform: scale(1.05);
+}
+
+.introLeftButton:active,
+.introLeftButtonSecond:active {
+  -webkit-transform: scale(1.08);
+}
+
+.introLeftImage {
+  position: absolute;
+  top: 90px;
+  left: 25%;
+  transform: translate(-50%);
+  z-index: 1;
+}
+.introRightImage {
+  position: absolute;
+  top: 30px;
+  left: 68%;
+  transform: translate(-50%);
+  z-index: 2;
+}
+
+.introRightBackgroundImage {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.introTextMain {
+  color: var(--color-text-second);
+}
+
+.introTimer {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .sm-mb-2 {
+    margin-bottom: 30px; 
+  }
+
+  .intro {
+    flex-direction: column-reverse;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .introLeft {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .introLeftButton {
+    align-items: center;
+  }
+
+  .introLeftButtonSecond {
+    align-items: center;
+  }
+
+  .introRightWrapper {
+    position: relative;
+    height: 500px;
+  }
+
+  .introRightBackgroundImage {
+    width: 80vw;
+  }
+
+  .introTimer {
+    display: block;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .introLeft {
+    padding: 0 20px;
+  }
+  h1 {
+    font-size: 28px;
+    max-width: 380px;
+  }
+
+  .introLeftText {
+    font-size: 18px;
+  }
+
+  .introRightImage {
+    width: 350px;
+  }
+  .introLeftImage {
+    width: 280px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .introButtons {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .introLeftButtonSecond {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .introRightBackgroundImage {
+    width: 358px;
+  }
+
+  .introRightImage {
+    width: 342px;
+  }
+}

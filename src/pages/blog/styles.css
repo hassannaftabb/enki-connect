@@ -1,0 +1,49 @@
+#blogSwiper {
+    width: 90vw;
+    height: 100vh;
+    margin: 50px auto;
+  }
+
+  .swiper-slide {
+    font-size: 18px;
+    background: #1b2125;
+    height: calc((100% - 30px) / 2.5) !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border-radius: 15px;
+    margin: 15px 0;
+  }
+  .imgDiv{
+    width: 100%;
+    height: 100%;
+  }
+
+  .imgDiv img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+  }
+
+  .swipertext{
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    text-align: start;
+  }
+  .swiperTitle{
+    color: white;
+    font-size: 25px;
+  }

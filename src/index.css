@@ -1,0 +1,130 @@
+:root {
+  /*COLOR*/
+  --color-background: #1b2125;
+  --color-navbar: #1b2125;
+
+  --color-main: #3f6ff9;
+  --color-main-second: #272f34;
+  --color-white: #ffffff;
+  --color-box: #000000;
+
+  --color-text-main: #ffffff;
+  --color-text-second: #3f6ff9;
+  --color-text-title: orange;
+
+  /*SIZE*/
+  ---main-padding: 0px;
+
+  ---border-radius: 0px;
+  ---border-radius-button: 0px;
+  ---border-radius-small: 0px;
+
+  ---navbar-height: 100px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #1b2125;
+  scroll-behavior: smooth;
+}
+
+.main {
+  margin-bottom: 0px;
+}
+
+.red {
+  background-color: red;
+}
+
+.componentFirst {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.componentSecond {
+  width: 100%;
+  max-width: 1250px;
+  display: flex;
+  margin: 0 50px;
+}
+
+.componentSecondMain {
+  width: 100%;
+  max-width: 1250px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
+}
+.elapse {
+  width: 2500px;
+  height: 2500px;
+  position: absolute;
+  left: 50%;
+  background: transparent radial-gradient(closest-side at 50% 50%, #3f6ff961 0%, #3f6ff938 47%, #3f6ff900 100%) 0%
+    0% no-repeat padding-box;
+  z-index: -100;
+}
+
+.Line1 {
+  position: absolute;
+  right: 0;
+  top: 300px;
+  z-index: -10;
+  transform: translate(38%) rotate(180deg);
+}
+
+.Line2 {
+  position: absolute;
+  left: 0;
+  top: 2030px;
+  transform: translate(-38%);
+}
+
+.Line3 {
+  position: absolute;
+  right: 0;
+  top: 2550px;
+  transform: translate(38%) rotate(180deg);
+}
+.none {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .Line1,
+  .Line2,
+  .Line3 {
+    display: none;
+  }
+  .elapse {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+ 
+  .componentSecond {
+    margin: 0 20px;
+  }
+  .main {
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .componentSecond {
+    margin: 0 10px;
+  }
+}
+
+.no-bg {
+  background-color: transparent !important;
+  overflow: hidden;
+}
