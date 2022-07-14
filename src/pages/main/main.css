@@ -13,7 +13,6 @@
     display: flex;
     width: 80%;
     border: 1px;
-    z-index: 9999;
     position: absolute;
 }
 #heroSecFunc > input{
