@@ -17,25 +17,25 @@ import CarouselBanner from '../../components/Intro/CarouselBanner';
 const Main = () => {
   return (
     <div className="main">
-      <div className="dontshowOnMobile">
+      {/* <div className="dontshowOnMobile">
         <CarouselBanner />
-      </div>
-
-      <div className="showOnMobile">
-        <div className="textMainDiv">
+      </div> */}
+      <CarouselBanner />
+      {/* <div className="showOnMobile"> */}
+      {/* <div className="textMainDiv">
           <p>
             Fine the best <span className="spanMainText">services </span>for
             your business.
           </p>
-        </div>
+        </div> */}
 
-        <div className="frontPageInputEmail">
+      {/* <div className="frontPageInputEmail">
           <input type="email" placeholder="Lets join now" />{' '}
         </div>
         <div className="frontPageJoinButton">
           <button type="button">Join</button>{' '}
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
 
       <div></div>
       <div id="heroSectionL">
